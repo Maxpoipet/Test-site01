@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ตลาดลูกหนัง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background-color: #222222;
+    }
+    .shadow-card {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .glow-border {
+      border: 4px solid #9f7aea;
+      border-radius: 10px;
+    }
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%) }
+      100% { transform: translateX(-100%) }
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- โลโก้ด้านบนแบบเด้ง -->
+  <div class="text-center my-4 animate-bounce">
+    <img src="https://i.postimg.cc/BZBQJbcy/8a9574f5-46cb-4e80-8951-232edae47177-removalai-preview.png" class="mx-auto w-32 h-auto" />
+  </div>
+
+  <!-- ข้อความวิ่งพร้อมแถบพื้นหลัง -->
+  <div class="bg-purple-800 bg-opacity-20 py-2 mb-4 relative overflow-hidden rounded-full mx-4">
+    <p class="marquee text-sm text-white font-medium px-4">
+      รับทำเว็บไซต์ ออกแบบเว็บไซต์ เขียนโปรแกรม และแอปพลิเคชั่น ทั้งรูปแบบองค์กร SME และ อีคอมเมิร์ซ สร้างแบรนด์ สร้างตัวตน ดูแลครบจบที่เรา
+    </p>
+  </div>
+
+  <!-- วีดีโอ -->
+  <div class="px-4 mb-6">
+    <div class="relative glow-border overflow-hidden" style="padding-top: 56.25%;">
+      <iframe src="https://player.vimeo.com/video/1094623570?autoplay=1&muted=0" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- กล่องเข้าสู่ระบบพร้อมพื้นหลัง -->
+  <div class="text-center my-6 px-4">
+    <div class="bg-gradient-to-br from-purple-900 to-purple-700 p-6 rounded-xl max-w-md mx-auto shadow-card">
+      <h2 class="text-white text-lg font-semibold mb-4">เข้าสู่ระบบ</h2>
+      <input type="text" placeholder="ชื่อผู้ใช้" class="p-2 rounded-md bg-white text-black w-full mb-3 shadow" />
+      <input type="password" placeholder="รหัสผ่าน" class="p-2 rounded-md bg-white text-black w-full mb-4 shadow" />
+      <a href="https://line.me/R/ti/p/@454raxbb" target="_blank"
+         class="block px-6 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-yellow-500 hover:scale-105 transition-transform animate-bounce text-white font-semibold">
+        เข้าสู่ระบบ / สมัครสมาชิก
+      </a>
+    </div>
+  </div>
+
+  <!-- ตารางบอล (ไอเฟรม) -->
+  <div class="px-4 mb-6">
+    <iframe id="iframe-score108" width="100%" height="520" frameborder="0" scrolling="no"
+            src="https://www.score108.com/soccer/scoreAPI"
+            style="border: 1px solid #999;">
+    </iframe>
+  </div>
+
+  <!-- ภาพ gif ล่างสุด -->
+  <div class="text-center mb-20">
+    <a href="https://www.facebook.com/share/161BTqjhi4/" target="_blank">
+      <img src="https://i.postimg.cc/y8HrT6Sm/58f690b9-af2a-4626-b249-096bd015d3c8.gif"
+           class="w-56 mx-auto animate-pulse" />
+    </a>
+  </div>
+
+  <!-- แถบเมนูด้านล่าง -->
+  <div class="fixed bottom-0 w-full bg-black bg-opacity-90 text-white text-xs flex justify-around py-2 z-50 border-t border-gray-700">
+    <a href="#" class="flex flex-col items-center hover:text-yellow-400">
+      <i class="ph ph-house text-lg"></i>
+      เมนู
+    </a>
+    <a href="#" class="flex flex-col items-center hover:text-yellow-400">
+      <i class="ph ph-coins text-lg"></i>
+      ทุนฟรี
+    </a>
+    <a href="#" class="flex flex-col items-center hover:text-yellow-400">
+      <i class="ph ph-trophy text-lg"></i>
+      ทายผล
+    </a>
+    <a href="#" class="flex flex-col items-center hover:text-yellow-400">
+      <i class="ph ph-percent text-lg"></i>
+      โปรโมชั่น
+    </a>
+  </div>
+
+</body>
+</html>
